@@ -1,13 +1,13 @@
 import './js/common';
 import './css/main.css';
-import './sass/main.sass';
 
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './js/react-components/App';
 
-//import 'vue;'
-
-//import Vue from 'vue';
-
-//window.Vue = require('vue');
-
-//import 'bootstrap/dist/css/bootstrap.css';
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);

@@ -1,3 +1,111 @@
-.wrapper {
+html {
+    background-color: floralwhite;
+}
+
+.App {
+    text-align: center;
+    background-color: #282c34;
+    padding: 50px;
+    margin: 20px;
+}
+
+h3 {
+    color: crimson;
+}
+
+h2 {
+    color: floralwhite;
+}
+
+h1 {
+    color: floralwhite;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: salmon;
+    color: floralwhite;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid floralwhite;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.listCard {
+    color: floralwhite;
+    background-color: pink;
+    margin: 10px;
+}
+
+.tableCard {
+    color: floralwhite;
+    background-color: pink;
+    margin: 10px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.block {
+    background-color: pink;
+    margin: 20px;
+    padding: 10px;
+}
+
+.table {
     display: flex;
+    flex-wrap: wrap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.level1 {
+    background-color: crimson;
+    padding: 20px;
+    margin: 20px;
+}
+
+.level2 {
+    background-color: salmon;
+    padding: 20px;
+}
+
+.level3 {
+    background-color: floralwhite;
+    padding: 20px;
+}
+
+hr {
+    margin: 30px 20px;
 }

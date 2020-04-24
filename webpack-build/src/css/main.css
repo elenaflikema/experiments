@@ -38,10 +38,20 @@ button {
     margin: 10px;
 }
 
-.tableCard {
+.article {
     color: floralwhite;
     background-color: pink;
-    margin: 10px;
+    height: 70px;
+    margin: 10px auto;
+    transition: background-color .5s, height 0.5s;
+    overflow: hidden;
+}
+
+.selected {
+    background-color: darkmagenta;
+    height: 220px;
+    transition: background-color .5s, height 0.5s;
+    overflow: hidden;
 }
 
 .App-logo {
@@ -58,12 +68,6 @@ button {
 .table {
     display: flex;
     flex-wrap: wrap;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
 }
 
 .App-header {

@@ -22,6 +22,9 @@ module.exports = {
         path: PATHS.dist,
         publicPath: '/'
     },
+    resolve: {
+        extensions: [".ts", ".tsx", ".js", ".json"]
+    },
     module: {
         rules: [{
             test: /\.ts(x?)$/,

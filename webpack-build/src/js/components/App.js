@@ -3,15 +3,14 @@ import './hoc/ClickCounter'
 import ClickCounterHOC from './hoc/ClickCounter';
 import HoverCounterHOC from './hoc/HoverCounter';
 
+import Counter from './renderProps/Counter';
 import ClickCounterRP from './renderProps/ClickCounter';
 import HoverCounterRP from './renderProps/HoverCounter';
 import User from './renderProps/User';
 
-import Counter from './renderProps/Counter';
-import Catalog from "./catalog/Catalog";
+import Catalog from "./Catalog/Catalog";
 import AppComponent from "./context/AppComponent";
 import { UserProvider } from './context/userContext';
-import ParentComp from "./pureComponents/ParentComp";
 
 import { HelloTS } from "./ts-components/HelloTS.tsx";
 
@@ -21,10 +20,6 @@ function App() {
 
             <h3>Welcome to TypeScript</h3>
             <HelloTS compiler="TS" framework="React"/>
-
-            <h3>Pure Component</h3>
-            <ParentComp />
-            <hr />
 
             <h3>Context</h3>
             <UserProvider value="Elena Flikema">

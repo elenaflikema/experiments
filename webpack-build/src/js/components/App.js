@@ -13,10 +13,14 @@ import AppComponent from "./context/AppComponent";
 import { UserProvider } from './context/userContext';
 import ParentComp from "./pureComponents/ParentComp";
 
+import { HelloTS } from "./ts-components/HelloTS.tsx";
 
 function App() {
     return (
         <div className="App">
+
+            <h3>Welcome to TypeScript</h3>
+            <HelloTS compiler="TS" framework="React"/>
 
             <h3>Pure Component</h3>
             <ParentComp />

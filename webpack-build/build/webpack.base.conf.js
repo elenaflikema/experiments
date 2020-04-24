@@ -24,9 +24,17 @@ module.exports = {
     },
     module: {
         rules: [{
+            test: /\.ts(x?)$/,
+            exclude: /node_modules/,
+            use: [
+                {
+                    loader: "ts-loader"
+                }
+            ]
+        },
+        {
             test: /\.js$/,
-            loader: 'babel-loader',
-            exclude: '/node_modules/'
+            loader: 'babel-loader'
         }, {
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',

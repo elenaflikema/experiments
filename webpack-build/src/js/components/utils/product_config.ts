@@ -1,4 +1,10 @@
-export const productConfig = [
+interface ProductData {
+    id: number,
+    price: number,
+    data?: Date
+}
+
+export const productConfig: Array<ProductData> = [
     {
         id: 0,
         price: 1000,
@@ -26,6 +32,6 @@ export const productConfig = [
     },
 ];
 
-export function getArticleInfoById(id) {
+export function getProductDataById(id: number): ProductData | null {
     return productConfig.find((product) => id === product.id);
 }

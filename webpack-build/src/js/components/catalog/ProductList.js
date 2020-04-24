@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { productConfig } from '../utils/product_config';
+import { productConfig } from '../utils/product_config.ts';
 
 const ProductList = ({isListFormat}) => {
 

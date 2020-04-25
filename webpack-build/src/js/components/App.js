@@ -14,9 +14,19 @@ import { UserProvider } from './context/userContext';
 
 import { HelloTS } from "./ts-components/HelloTS.tsx";
 
+import LangSelector from "./LangContext/LangSelector";
+import { LangProvider } from "./LangContext/langContext";
+
 function App() {
+
     return (
         <div className="App">
+
+            <h3>Language Context</h3>
+            <LangProvider>
+                <LangSelector/>
+            </LangProvider>
+
 
             <h3>Welcome to TypeScript</h3>
             <HelloTS compiler="TS" framework="React"/>
@@ -25,6 +35,9 @@ function App() {
             <UserProvider value="Elena Flikema">
                 <AppComponent />
             </UserProvider>
+
+            <h3>Default Context (is used when there is no Provider for the Context)</h3>
+            <AppComponent />
 
             <hr />
 
